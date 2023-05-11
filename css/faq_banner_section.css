@@ -1,0 +1,251 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.blue_banner_img {
+    z-index: 0;
+    margin-top: 15%;
+}
+
+.green_banner_img {
+    z-index: 1;
+    position: absolute;
+    margin-top: 14.84%;
+    margin-left: 0.7%;
+}
+
+.faq_banner_headline {
+    z-index: 1;
+    font-size: x-large;
+    position: absolute;
+    margin-top: 17%;
+    margin-left: -20%;
+}
+
+.faq_headline_top {
+    color: white;
+}
+
+.faq_headline_bottom {
+    margin-top: -5%;
+    color: white;
+}
+
+.faq_banner_caption {
+    position: absolute;
+    z-index: 1;
+    margin-top: 27%;
+    margin-left: -22%;
+    color: white;
+}
+
+.get_more_details {
+    position: absolute;
+    z-index: 1;
+    margin-top: 31%;
+    margin-left: -30%;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 30px;
+    height: 50px;
+    width: 250px;
+    color: darkgreen;
+    background-color: white;
+    border: none;
+}
+
+.get_more_details:hover {
+    background-color: darkgreen;
+    color: white;
+    transition: 0.5s;
+}
+
+.banner_dots, 
+.solid_white_ellipse, 
+.blurred_green_ellipse, 
+.green_banner_train, 
+.green_banner_traveller {
+
+    position: absolute;
+}
+
+.green_banner_traveller {
+    z-index: 2;
+    margin-top: 18%;
+    margin-left: 18%;
+    transform: rotate(2deg);
+}
+
+.green_banner_train {
+    z-index: 1;
+    margin-top: 28.5%;
+    margin-left: 9.5%;
+    transform: rotate(-1deg);
+}
+
+.solid_white_ellipse {
+    z-index: 1;
+    margin-top: 19%;
+    margin-left: 21%;
+}
+
+.blurred_green_ellipse {
+    z-index: 1;
+    margin-top: 27%;
+    margin-left: 23%;
+}
+
+.banner_dots {
+    z-index: 1;
+    margin-top: 17.5%;
+    margin-left: 13%;
+}
+
+.faq_and_help {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 70%;
+}
+
+.help, .faq {
+    flex: 50%;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.faq_1, .faq_2, .faq_3, .faq_4 {
+    display: flex;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.faq_1 {
+    border: 2px solid darkblue;
+}
+
+.faq_2, .faq_3, .faq_4  {
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.accordion_close {
+    margin-top: 21px
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.help_title {
+    font-size: 3rem;
+    margin-bottom: -1%;
+}
+
+.help_logo {
+    align-self: center;
+}
+
+.cta_button {
+    margin-top: 10%;
+    font-size: x-large;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(15, 67, 134);
+    color: white;
+}
+
+.cta_button:hover {
+    background-color: white;
+    color: rgb(15, 67, 134);
+    transition: 0.5s;
+}
+
+.downloads_section {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.downloads_heading_part1, 
+.downloads_heading_part2 {
+    font-size: 3rem;
+}
+.downloads_heading_part2 {
+    margin-top: -5%;
+}
+
+.downloads_caption1, 
+.downloads_caption2 {
+    font-size: large;
+}
+
+.downloads_caption2 {
+    margin-top: -2%;
+}
+
+.download_options {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.download_btn {
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
+    border: none;
+}
+
+.download_btn > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_lower_text {
+    font-size: large;
+    margin-top: 10%;
+}
+
+.btn_upper_text {
+    text-align: left;
+}
+
+.btn_nav {
+    height: 50px;
+    background-color: #aeb3f0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.next_previous_nav {
+    display: block;
+    margin-right: 0%;
+    margin-left: auto;
+    width: 25%;
+}

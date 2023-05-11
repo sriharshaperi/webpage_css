@@ -1,0 +1,124 @@
+.content_body {
+    padding: 2%;
+    background-image: linear-gradient(to bottom, lightcyan, white);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.journey_details_form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_group, .travel_type_options, 
+.journey_date_time_details, .out_journey_details, 
+.return_journey_details {
+    margin-top: 5%;
+}
+
+.journey_date_time_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.checkbox_group, 
+.travel_type_options, 
+.passenger_details,
+.form_submit_button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.from_to_input_fields {
+    display: flex;
+    align-items: center;
+}
+
+.journey_details_form {
+    padding: 10px;
+    margin-bottom: 25%;
+    margin-top: 1%;
+    margin-left: -50%;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10%;
+}
+
+.banner_headline, 
+.banner_caption, 
+.learn_more_button, 
+.train_on_banner {
+    z-index: 1;
+    position: absolute;
+}
+
+.background_banner_img {
+    /* -webkit-mask-image: linear-gradient(transparent, black); */
+    filter: brightness(60%);
+}
+
+.banner_headline {
+    margin-top: -25%;
+    margin-left: 17%;
+    color: white;
+}
+
+.banner_caption {
+    margin-top: -22%;
+    margin-left: 17%;
+    color: white;
+}
+
+.learn_more_button {
+    margin-top: 15%;
+    margin-left: -35%;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(2, 158, 98);
+    color: white;
+    border: 1px solid white;
+}
+
+.learn_more_button:hover {
+    background-color: white;
+    color: rgb(2, 158, 98);
+    border: 1px solid darkgreen;
+    transition: 0.5s;
+}
+
+.train_on_banner {
+    margin-top: 22%;
+    margin-left: -26.35%;
+    background: linear-gradient(520deg, transparent, rgb(54, 126, 54));
+}
+
+.to_and_fro {
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 6.3%;
+}
+
+.get_times_and_tickets {
+    font-size: large;
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgb(15, 67, 134);
+    color: white;
+}
+
+.get_times_and_tickets:hover {
+    background-color: white;
+    color: rgb(15, 67, 134);
+    transition: 0.5s;
+}

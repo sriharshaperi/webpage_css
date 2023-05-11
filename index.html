@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GreenLine</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content_body.css">
+    <link rel="stylesheet" href="css/cards_section.css">
+    <link rel="stylesheet" href="css/faq_banner_section.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <!-- This section contains Nav Bar Elements  -->
+
+    <section class="nav_bar_section">
+
+        <!-- Nav Bar -->
+
+        <nav class="nav_bar">
+
+            <!-- Nav Bar Icon to be arranged on the left side of nav bar-->
+
+            <div class="nav_icon">
+                <a href="">
+                    <img src="homepage/Group 16059@2x.png" class="nav_icon_img" alt="nav_icon_img" width="250"
+                    height="50" />
+                </a>
+            </div>
+
+            <!-- Navbar list items to be arragned on the right side of navbar  -->
+
+            <div class="nav_list">
+
+                <!-- Navbar top list items  -->
+
+                <div class="nav_list_top">
+                    <ul>
+                        <li class="nav_list_top_item1">
+                            <div class="loc_group">
+                                <img src="homepage/gb@2x.png" class="loc_flag_icon" alt="loc_flag_icon" width="20"
+                                    height="15" />
+                                <select name="location_dropdown" id="loc_dropdown">
+                                    <option value="">Choose Region</option>
+                                    <option value="uk">UK</option>
+                                    <option value="us">US</option>
+                                    <option value="aus">AUS</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="nav_list_top_item2"><a href="">Business</a></li>
+                        <li class="nav_list_top_item3"><a href="">Help</a></li>
+                        <li class="nav_list_top_item4"><a href="">Register</a></li>
+                        <li>
+                            <button class="sign_in">Sign In</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav_list_bottom">
+
+                    <!-- Navbar bottom list items -->
+
+                    <ul>
+                        <li class="nav_list_bottom_item1">
+                            <select name="uk_trains_dropdown" id="uk_trains">
+                                <option value="">UK Trains</option>
+                                <option value="uk">London Trains</option>
+                                <option value="us">Edinburgh Trains</option>
+                            </select>
+                        </li>
+                        <li class="nav_list_bottom_item2">
+                            <select name="eu_trains_dropdown" id="eu_trains">
+                                <option value="">Europe Trains</option>
+                                <option value="uk">Florence Trains</option>
+                                <option value="us">Amsterdam Trains</option>
+                            </select>
+                        </li>
+                        <li class="nav_list_bottom_item3">
+                            <select name="train_companies_dropdown" id="train_companies">
+                                <option value="">Train Companies</option>
+                                <option value="uk">Northwestern Railway</option>
+                                <option value="us">Merseyrail</option>
+                                <option value="aus">Deutsche Bahn</option>
+                            </select>
+                        </li>
+                        <li class="nav_list_bottom_item4">
+                            <select name="popular_journeys_dropdown" id="popular journeys">
+                                <option value="">Popular Journeys</option>
+                                <option value="uk">Barcelona and Figueres</option>
+                                <option value="us">Venice and Verona</option>
+                                <option value="aus">Berlin and Colditz</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- This section contains content body elements  -->
+
+    <section class="content_body">
+
+        <!-- journey details form to be arranged on the left side -->
+
+        <div class="journey_details_form">
+            <img src="/homepage/to_and_fro.png" alt="to_and_fro" class="to_and_fro" width="25">
+            <form action="" method="POST">
+
+                <!-- departure and arrival station inputs fields -->
+
+                <div class="form_group from_to_input_fields">
+                    <label for="source_loc">Input</label>
+                    <input type="text" name="source_loc" placeholder="Placeholder" required>
+
+                    <img src="homepage/Ellipse 9@2x.png" class="to_and_fro_icon" alt="to_and_fro_icon" width="40"
+                        height="40">
+
+                    <label for="dest_loc">To</label>
+                    <input type="text" name="dest_loc" placeholder="Placeholder" required>
+                </div>
+
+                <!-- checkbox, select and input text fields form group -->
+
+                <div class="form_group checkbox_group">
+                    <label for="checkbox_via_avoid">Via/Avoid</label>
+                    <input type="checkbox" name="checkbox_via_avoid">
+
+                    <select name="select_via_Avoid" id="">
+                        <option value="">Choose</option>
+                        <option value="avoid">Avoid</option>
+                        <option value="via">Via</option>
+                    </select>
+
+                    <input type="text" name="via_avoid_station" placeholder="Enter Station">
+                </div>
+
+                <!-- form group for horizintal line -->
+
+                <div class="form_group">
+                    <hr>
+                </div>
+
+                <div class="travel_type_options">
+                    <input type="radio" name="journey_type" id="one_way" value="" checked>
+                    <label for="one_way">One Way</label>
+
+                    <input type="radio" name="journey_type" id="return" value="">
+                    <label for="return">Return</label>
+
+                    <input type="radio" name="journey_type" id="open_return" value="">
+                    <label for="open_return">Open Return</label>
+
+                    <input type="radio" name="journey_type" id="seasons" value="">
+                    <label for="seasons">Seasons</label>
+                </div>
+                <div class="journey_date_time_details">
+                    <div class="out_journey_details">
+                        <label for="leaving_date_out">Out</label>
+                        <input type="date" name="leaving_date_out" required>
+
+                        <label for="leaving_time_out">Leaving At</label>
+                        <input type="time" name="leaving_time_out" required>
+                    </div>
+                    <div class="return_journey_details">
+                        <label for="leaving_date_return">Ret</label>
+                        <input type="date" name="leaving_date_return" required>
+
+                        <label for="leaving_time_return">Leaving At</label>
+                        <input type="time" name="leaving_time_return" required>
+                    </div>
+                </div>
+                <div class="form_group passenger_details">
+                    <label for="passenger_count">Add Passengers</label>
+                    <div class="passenger_category_count" name="passenger_count">
+                        <label for="adults">Adults</label>
+                        <input type="number" name="adults" min="0" max="6" required>
+
+                        <label for="kids">Kids</label>
+                        <input type="number" name="kids" min="0" max="6" required>
+                    </div>
+                </div>
+                <div class="form_group form_submit_button">
+                    <input class="get_times_and_tickets" type="submit" value="Get Times & Tickets">
+                </div>
+            </form>
+        </div>
+        <div class="content_banner">
+            <!-- content banner to be arranged on the right side -->
+
+            <img src="homepage/nick-page-4iZrQRh5gb4-unsplash@2x.png" class="background_banner_img"
+                alt="background_banner_img" width="800" height="500">
+            <h1 class="banner_headline">Explore Europe Effortlessly By Train and Bus</h1>
+            <h3 class="banner_caption">Save 61% on average when you book in advance*</h3>
+            <button class="learn_more_button">Learn More</button>
+            <img src="homepage/trian_PNG-1@2x.png" alt="train_on_banner" class="train_on_banner" width="400">
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+
+
+    <section class="cards_section">
+        <div class="cards">
+            <div class="card_1">
+                <div class="card_details">
+                    <div class="card_1_image">
+                        <img class="card_image" src="homepage/london_street.jpg" alt="" width="300" height="200">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_content_left">
+                            <div class="card_title">
+                                <h4>London to Liverpool</h4>
+                            </div>
+                            <div class="card_offer">
+                                <h6>From $75.08</h6>
+                            </div>
+                        </div>
+                        <div class="card_rating">
+                            <h6>7.0</h6>
+                        </div>
+                        <div class="card_content_right">
+                            <div class="card_caption">
+                                <h6 class="card_caption_top">Good</h6>
+                                <h6 class="card_caption_bottom"><small><em>Reviews</em> 350</small></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="train_icon_img" src="homepage/-train_90433.png" alt="train_icon" width="30">
+                    <img class="train_icon_background" src="homepage/Ellipse 11@2x.png" alt="train_icon_background"
+                        width="60">
+                </div>
+            </div>
+            <div class="card_2">
+                <div class="card_details">
+                    <div class="card_1_image">
+                        <img class="card_image" src="homepage/london_street.jpg" alt="" width="300" height="200">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_content_left">
+                            <div class="card_title">
+                                <h4>London to Liverpool</h4>
+                            </div>
+                            <div class="card_offer">
+                                <h6>From $75.08</h6>
+                            </div>
+                        </div>
+                        <div class="card_rating">
+                            <h6>7.0</h6>
+                        </div>
+                        <div class="card_content_right">
+                            <div class="card_caption">
+                                <h6 class="card_caption_top">Good</h6>
+                                <h6 class="card_caption_bottom"><small><em>Reviews</em> 350</small></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="train_icon_img" src="homepage/-train_90433.png" alt="train_icon" width="30">
+                    <img class="train_icon_background" src="homepage/Ellipse 11@2x.png" alt="train_icon_background"
+                        width="60">
+                </div>
+            </div>
+            <div class="card_3">
+                <div class="card_details">
+                    <div class="card_1_image">
+                        <img class="card_image" src="homepage/london_street.jpg" alt="" width="300" height="200">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_content_left">
+                            <div class="card_title">
+                                <h4>London to Liverpool</h4>
+                            </div>
+                            <div class="card_offer">
+                                <h6>From $75.08</h6>
+                            </div>
+                        </div>
+                        <div class="card_rating">
+                            <h6>7.0</h6>
+                        </div>
+                        <div class="card_content_right">
+                            <div class="card_caption">
+                                <h6 class="card_caption_top">Good</h6>
+                                <h6 class="card_caption_bottom"><small><em>Reviews</em> 350</small></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="train_icon_img" src="homepage/-train_90433.png" alt="train_icon" width="30">
+                    <img class="train_icon_background" src="homepage/Ellipse 11@2x.png" alt="train_icon_background"
+                        width="60">
+                </div>
+            </div>
+        </div>
+        <div class="loading">
+            <img src="homepage/Group 9846@2x.png" class="loading_img" alt="loading_img" width="80">
+        </div>
+        <div class="view_all">
+            <button class="view_all_btn">View All</button>
+        </div>
+
+
+        <!-- Services options -->
+
+        <div class="other_card_options">
+            <div class="option_1">
+                <div class="card_1_top">
+                    <img class="ellipse_green" src="homepage/Ellipse 9@2x.png" alt="ellipse_green" width="40">
+                    <img class="tick_icon" src="homepage/1@2x.png" alt="tick_icon" width="25">
+                </div>
+                <div class="card_1_bottom">
+                    <div class="card_option_title">
+                        <h3>Compare</h3>
+                    </div>
+                    <div class="card_option_desc">
+                        <p>Compare cheap prices for train and bus tickets</p>
+                    </div>
+                </div>
+            </div>
+            <div class="option_2">
+                <div class="card_2_top">
+                    <img class="ellipse_green" src="homepage/Ellipse 9@2x.png" alt="ellipse_green" width="40">
+                    <img class="train_icon" src="homepage/-train_90433@2x.png" alt="train_icon" width="25">
+                </div>
+                <div class="card_2_bottom">
+                    <div class="card_option_title">
+                        <h3>Travel</h3>
+                    </div>
+                    <div class="card_option_desc">
+                        <p>Travel thousands of destinations in and across 45 countries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="option_3">
+                <div class="card_3_top">
+                    <img class="ellipse_green" src="homepage/Ellipse 9@2x.png" alt="ellipse_green" width="40">
+                    <img class="join_people_icon" src="homepage/XMLID_91_@2x.png" alt="train_icon" width="25">
+                </div>
+                <div class="card_3_bottom">
+                    <div class="card_option_title">
+                        <h3>Join People</h3>
+                    </div>
+                    <div class="card_option_desc">
+                        <p>Join millions of people who use us everyday</p>
+                    </div>
+                </div>
+            </div>
+            <div class="option_4">
+                <div class="card_4_top">
+                    <img class="ellipse_green" src="homepage/Ellipse 9@2x.png" alt="ellipse_green" width="40">
+                    <img class="chat_icon" src="homepage/2348991.png" alt="train_icon" width="25">
+                </div>
+                <div class="card_4_bottom">
+                    <div class="card_option_title">
+                        <h3>Support</h3>
+                    </div>
+                    <div class="card_option_desc">
+                        <p>Customer service on hand every step of the way</p>
+                    </div>
+                </div>
+            </div>
+            <div class="option_5">
+                <div class="card_5_top">
+                    <img class="ellipse_green" src="homepage/Ellipse 9@2x.png" alt="ellipse_green" width="40">
+                    <img class="customer_icon" src="homepage/customer_icon.ico" alt="train_icon" width="25">
+                </div>
+                <div class="card_5_bottom">
+                    <div class="card_option_title">
+                        <h3>Customer</h3>
+                    </div>
+                    <div class="card_option_desc">
+                        <p>
+                            Our differentiated, customer care features and
+                            unique capabilities built up across our highly
+                            B2C channels are also available
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#"><img class="navigate_image" src="homepage/Group 9808@2x.png" alt="navigate_next" width="50"></a>
+        </div>
+    </section>
+
+    <!-- FAQ's Banner Section -->
+
+
+    <section class="faq_banner_section">
+        <div class="banner">
+            <img src="homepage/Rectangle 159@2x.png" alt="blue_banner_img" class="blue_banner_img" width="1000">
+            <img src="homepage/Rectangle 113@2x.png" alt="green_banner_img" class="green_banner_img" width="1000">
+            <div class="faq_banner_headline">
+                <h1 class="faq_headline_top">Explore Europe Effortlessly</h1>
+                <h1 class="faq_headline_bottom">By Train and Bus</h1>
+            </div>
+            <h3 class="faq_banner_caption">Save 61% on average when you book in advance*</h3>
+            <button class="get_more_details">Get More Details</button>
+            <img src="homepage/Repeat Grid 19@2x.png" alt="banner_dots" class="banner_dots" width="50">
+            <img src="homepage/Ellipse 11@2x.png" alt="solid_white_ellipse" class="solid_white_ellipse" width="120">
+            <img src="homepage/Ellipse 13@2x.png" alt="blurred_green_ellipse" class="blurred_green_ellipse" width="120">
+            <img src="homepage/trian_PNG16650@2x.png" alt="green_banner_train" class="green_banner_train" width="250">
+            <img src="homepage/woman-hungarian-parliament-budapest-hungary-shutterstock_1118873774-1024x683@2x.png"
+                alt="green_banner_train" class="green_banner_traveller" width="350">
+        </div>
+
+        <div class="faq_and_help">
+            <div class="help">
+                <h1 class="help_title">We're here to help</h1>
+                <p class="help_desc">Find clear <a href="">FAQs</a> online and customer service available at the end of the phone seven
+                    days a week</p>
+                <img src="homepage/illu_laptop_help@2x.png" alt="help_logo" class="help_logo" width="250">
+                <button class="cta_button">CTA Button</button>
+            </div>
+            <div class="faq">
+                <div class="faq_1">
+                    <div class="faq_content">
+                        <h4>
+                            Do I need to confirm in advance if travelling
+                            in a different train?
+                        </h4>
+                        <p>
+                            You don't need to let us know if you
+                            want to change trains. But you'll need to check terms and
+                            conditions of your ticket to see if it'll still
+                            be valid for a different train.
+                        </p>
+                    </div>
+                    <div class="accordion_close_img">
+                        <img src="/homepage/accordion_close.png" alt="accordion_close" class="accordion_close"
+                            width="20">
+                    </div>
+                </div>
+                <div class="faq_2">
+                    <div class="faq_content">
+                        <h4>How much luggage can I take on the train?</h4>
+                    </div>
+                    <div class="accordion_open_img">
+                        <img src="/homepage/accordion_open.png" alt="accordion_open" class="accordion_open" width="20">
+                    </div>
+                </div>
+                <div class="faq_3">
+                    <div class="faq_content">
+                        <h4>How will I recieve my tickets?</h4>
+                    </div>
+                    <div class="accordion_open_img">
+                        <img src="/homepage/accordion_open.png" alt="accordion_open" class="accordion_open" width="20">
+                    </div>
+                </div>
+                <div class="faq_4">
+                    <div class="faq_content">
+                        <h4>What do the different seat options mean?</h4>
+                    </div>
+                    <div class="accordion_open_img">
+                        <img src="/homepage/accordion_open.png" alt="accordion_open" class="accordion_open" width="20">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Downloads on apple store and google -->
+
+        <div class="downloads_section">
+            <div class="download_section_left">
+                <h1 class="downloads_heading_part1">Europe's leading train and</h1>
+                <h1 class="downloads_heading_part2">bus app</h1>
+                <p class="downloads_caption1">Keep your trip on track with departure times, platform info, and tickets</p>
+                <p class="downloads_caption2"> in the palm of your hand</p>
+                <div class="download_options">
+                    <button class="download_btn">
+                        <div>
+                            <img src="/homepage/apple-logo.png" alt="apple_logo" width="50">
+                        <div class="btn_content">
+                            <span class="btn_upper_text">Download on the</span>
+                            <span class="btn_lower_text"><strong>Apple Store</strong></span>
+                        </div>
+                        </div>
+                    </button>
+                    <button class="download_btn">
+                        <div>
+                            <img src="/homepage/google-play.png" alt="apple_logo" width="50">
+                        <div class="btn_content">
+                            <span class="btn_upper_text">Get it on</span>
+                            <span class="btn_lower_text"><strong>Google Play</strong></span>
+                        </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="download_section_right">
+                <img src="homepage/mobile3@2x.png" alt="phone_icon" width="400">
+                <div class="next_previous_nav">
+                    <button class="btn_nav">
+                        <img src="/homepage/back.png" alt="" width="30">
+                    </button>
+                    <button class="btn_nav">
+                        <img src="/homepage/next.png" alt="" width="30">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section with links -->
+
+
+    <section class="footer">
+        <!-- This is footer nav -->
+        <div class="footer_Content">
+            <img src="homepage/Path 2954@2x.png" alt="footer_img" class="footer_img" width="1500">
+            <div class="tag_line">
+                <h4>We are happy when our customers are too</h4>
+            </div>
+            <div class="footer_body">
+                <div class="footer_body_col1">
+                    <img src="homepage/Group 16059@2x.png" alt="nav_icon_img" class="nav_icon_img" width="250">
+                    <div class="address_details">
+                        <p>Greenline.com is registered in England and Wales. Company No. 3846791</p>
+                        <p>Registered Address:</p>
+                        <p>3rd Floor, 120 Holborn, London EC1N 2TD, United Kingdom, VAT number: 791^^ 7261 06</p>
+                    </div>
+                    <div class="contact_us_on">
+                        <a href="#"><img src="homepage/Group 9740@2x.png" alt="fb_icon" class="fb_icon" width="50"></a>
+                        <a href="#"><img src="homepage/Group 9741@2x.png" alt="twitter_icon" class="twitter_icon"
+                                width="50"></a>
+                        <a href="#"><img src="homepage/Group 9742@2x.png" alt="insta_icon" class="insta_icon" width="50"></a>
+                        <a href="#"><img src="homepage/Group 9743@2x.png" alt="tg_icon" class="tg_icon" width="50"></a>
+                    </div>
+                </div>
+                <div class="footer_body_col2">
+                    <div class="link">
+                        <a href="#">About Greenline</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">News</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Investors</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Greenline Partner Solutions</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Affliates and Partnerships</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Terms and Conditions / Security</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Privacy / Cookies</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Modern Slavery Act (UK)</a>
+                    </div>
+                </div>
+                <div class="footer_body_col3">
+                    <select name="fb_col3_option1" id="fb_col3_op1">
+                        <option value="fb_col3_label">Help and useful information</option>
+                        <option value="fb_col3_val">Lorem ipsum dolor sit amet consectetur adipisicing elit</option>
+                    </select>
+                    <select name="fb_col3_option2" id="fb_col3_op2">
+                        <option value="fb_col3_label">Train and bus companies</option>
+                        <option value="fb_col3_val">Lorem ipsum dolor sit amet consectetur adipisicing elit</option>
+                    </select>
+                    <select name="fb_col3_option3" id="fb_col3_op3">
+                        <option value="fb_col3_label">Train journeys in the UK</option>
+                        <option value="fb_col3_val">Lorem ipsum dolor sit amet consectetur adipisicing elit</option>
+                    </select>
+                    <select name="fb_col3_option4" id="fb_col3_op4">
+                        <option value="fb_col3_label">Trains and buses in Europe</option>
+                        <option value="fb_col3_val">Lorem ipsum dolor sit amet consectetur adipisicing elit</option>
+                    </select>
+                    <select name="fb_col3_option5" id="fb_col3_op5">
+                        <option value="fb_col3_label">Top Destinations</option>
+                        <option value="fb_col3_val">Lorem ipsum dolor sit amet consectetur adipisicing elit</option>
+                    </select>
+                    <select name="fb_col3_option6" id="fb_col3_op6">
+                        <option value="fb_col3_label">Stations</option>
+                        <option value="fb_col3_val">Lorem ipsum dolor sit amet consectetur adipisicing elit</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="footer_baseline">
+            <img src="homepage/Path 3005@2x.png" alt="footer_baseline_img" class="footer_baseline_img" width="1500">
+            <div class="baseline_links">
+                <div class="tnc">
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="privacy_policy">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
