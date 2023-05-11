@@ -1,9 +1,7 @@
-# assignment-3-sriharshaneu
-assignment-3-sriharshaneu created by GitHub Classroom
+# Webpage CSS
 
 Name: Sri Harsha Peri
-Email: peri.s@northeastern.edu
-NUID: 002921346
+Email: sriharshaperi@gmail.com
 
 Added CSS to the Assignment 2 HTML Page. The assets are attached below.
 
