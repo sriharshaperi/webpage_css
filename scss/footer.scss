@@ -1,0 +1,65 @@
+@import './variables';
+@import './mixins';
+
+.tag_line {
+    margin-left: 10%;
+    z-index: 1;
+    h4 {
+        z-index: 2;
+        position: absolute;
+        color: $whiteColor;
+        font-weight: lighter;
+        @include marginTopAndLeft(-24.5%, -1%);
+    }
+}
+
+.nav_icon_img {
+    margin-left: -15%;
+}
+
+.footer_body {
+    @include justifyContent(space-evenly);
+    z-index: 1;
+    position: static;
+    margin-top: -25%;
+}
+
+.footer_body_col1, .footer_body_col2, .footer_body_col3 {
+    width: 310px;
+    padding: 1.5%;
+}
+
+.footer_body_col2 > .link, .footer_body_col3 > select {
+    margin-top: 3%;
+}
+
+.footer_body_col1 {
+    color: $whiteColor;
+}
+
+.footer_body_col3 {
+    @include flexDirection(column);
+    select {
+        margin-top: 5%;
+        color: $whiteColor;
+        font-size: medium;
+    }
+}
+
+.baseline_links {
+    @include justifyContent(space-around);
+    position: static;
+    z-index: 1;
+    margin-top: -2.5%;
+}
+
+.contact_us_on {
+    @include justifyContent(space-evenly);
+}
+
+.link > a, 
+.tnc, 
+.privacy_policy > a {
+    text-decoration: none;
+    color: $whiteColor;
+}

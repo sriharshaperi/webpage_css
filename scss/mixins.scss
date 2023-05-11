@@ -1,0 +1,44 @@
+@import './variables';
+
+@mixin borderOutlineNone {
+    border: none;
+    outline: none;
+}
+
+@mixin flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexCenterAndColumn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin justifyContent($spacing) {
+    display: flex;
+    justify-content: $spacing;
+}
+
+@mixin  flexDirection ($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin listItems {
+    ul {
+        li {
+            display: inline-block;
+        }
+    }     
+}
+
+@mixin borderRadius ($borderRadius) {
+    border-radius: $borderRadius;
+}
+
+@mixin  marginTopAndLeft ($marginTop, $marginLeft) {
+    margin-left: $marginLeft;
+    margin-top: $marginTop;
+}

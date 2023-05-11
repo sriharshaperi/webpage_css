@@ -1,16 +1,13 @@
-# Webpage CSS
+# assignment-4-sriharshaneu
+assignment-4-sriharshaneu created by GitHub Classroom
 
-Name: Sri Harsha Peri
-Email: sriharshaperi@gmail.com
-
-Added CSS to the Assignment 2 HTML Page. The assets are attached below.
-
-1. The goal of this assignment is to learn about CSS Selectors, properties, combinators, pseudo-classes, pseudo-elements, and box model.
-2. Used CSS class and tag selectors. Did not use ID selectors.
-3. JavaScript was not used.
-4. All individual elements should look very close to the image.
-5. The page layout need not match the image.
-6. You should not use the table element for formatting.
-7. You should add code documentation using CSS comments.
-8. You can use the attached assets.
-9. You can also use any open-source fonts.
+1. The goal of this assignment is to learn about CSS positioning, Grid layout / Flexbox, SCSS features like variables, mixins, inheritance, loops, functions, math operations, etc.
+2. SCSS should be organized in multiple files based on UI features, common elements, and themes.
+3. These SCSS files should be added to a main.scss file and this should be converted to a .css file using sass.
+4. The navbar should be sticky/fixed.
+5. JavaScript is not required. This will not add more points to this assignment.
+6. Your site should look very close to the attached file.
+7. You should not use the table element for formatting.
+8. You should add code documentation using SCSS comments.
+9. If any asset required for the page is missing then use the below links for placeholder assets.
+10. Can use icons from material design https://material.io/tools/icons/?style=baseline even if it doesn't match the UI mock.

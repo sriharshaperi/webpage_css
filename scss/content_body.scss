@@ -1,0 +1,146 @@
+@import './variables';
+@import './mixins';
+
+
+//content body styles
+.content_body {
+    padding: 2%;
+    background-image: linear-gradient(to bottom, $lightCyan, $whiteColor);
+    padding-top: 10%;
+    
+    @include justifyContent(space-evenly);
+}
+
+
+//form element styles
+.journey_details_form {
+    form {
+        @include flexDirection(column);
+    }
+}
+
+//form elements styles
+
+.form_group, 
+.travel_type_options, 
+.journey_date_time_details, 
+.out_journey_details, 
+.return_journey_details {
+    margin-top: 5%;
+}
+
+//journey date time styles
+
+.journey_date_time_details {
+    
+    @include flexCenterAndColumn();
+    @include borderRadius(20px);
+
+    padding-bottom: 5%;
+    background-color: $whiteColor;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.checkbox_group, 
+.travel_type_options, 
+.passenger_details,
+.form_submit_button {
+    
+    @include flexAlignCenter();
+    @include justifyContent(space-evenly);
+}
+
+.from_to_input_fields {
+    
+    @include flexAlignCenter();
+}
+
+.journey_details_form {
+    padding: 10px;
+    margin-bottom: 25%;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 0px 8px #888888;
+    
+    @include borderRadius(10%);
+    @include marginTopAndLeft(1%, -50%);
+}
+
+//styles on banner
+
+.banner_headline, 
+.banner_caption, 
+.learn_more_button, 
+.train_on_banner {
+    z-index: 1;
+    position: absolute;
+}
+
+//backgdround nbanner image styles
+
+.background_banner_img {
+    /* -webkit-mask-image: linear-gradient(transparent, black); */
+    filter: brightness(30%);
+}
+
+.banner_headline {
+    color: $whiteColor;
+    @include marginTopAndLeft(-25%, 17%);
+}
+
+.banner_caption {
+    color: $whiteColor;
+    @include marginTopAndLeft(-22%, 17%);
+}
+
+.learn_more_button {
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: $greenButton;
+    color: $whiteColor;
+    border: 1px solid $whiteColor;
+
+    @include borderRadius(30px);
+    @include marginTopAndLeft(15%, -35%);
+
+    &:hover {
+        background-color: $whiteColor;
+        color: $greenButton;
+        border: 1px solid darkgreen;
+        transition: $transition;
+    }
+}
+
+.train_on_banner {
+    background: linear-gradient(880deg, transparent 70%, $greenButton 30%);
+    @include marginTopAndLeft(22%, -26.35%);
+
+}
+
+.to_and_fro {
+    position: absolute;
+    @include marginTopAndLeft(6.3%, 47%);
+}
+
+//form button styles
+
+.get_times_and_tickets {
+    font-size: large;
+    height: 50px;
+    width: 250px;
+    background-color: $blueButton;
+    color: $whiteColor;
+
+    @include borderRadius(5px);
+
+    &:hover {
+
+        background-color: $whiteColor;
+        color: $blueButton;
+        transition: $transition;
+        border: 2px solid $blueButton;
+    }
+}

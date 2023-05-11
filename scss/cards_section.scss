@@ -1,0 +1,153 @@
+
+//included files variables and mixins
+@import './variables';
+@import './mixins';
+
+
+//card section styles
+.cards_section {
+
+    //mixin for flex direction column
+    @include flexDirection(column);
+}
+
+//card styles
+.cards {
+    padding: 2%;
+
+    //mixin for justify content space evenly
+    @include justifyContent(space-evenly);
+}
+
+.card_1, 
+.card_2, 
+.card_3,
+.card_details,
+.card_image
+ {
+    border-radius: 5%;
+}
+
+.card_1, .card_2, .card_3 {
+    // box-shadow: 5px 10px 8px #888888;
+    border: 1px solid #888888;
+    padding: 1%;
+    &:hover {
+        border: none;
+        box-shadow: 5px 10px 8px #888888;
+        transition: $transition;
+    }
+}
+
+.card_content {
+    @include justifyContent(space-between);
+}
+
+.card_rating {
+    margin-top: -4%;
+}
+
+.card_title, .card_offer {
+    margin-top: -10%;
+}
+
+.card_caption {
+    margin-top: -18%;
+    flex-direction: column;
+}
+
+.card_caption_top {
+    text-align: end;
+    margin-top: 20px;
+}
+
+.card_caption_bottom {
+    margin-top: -20px;
+}
+
+.train_icon_img {
+    position: absolute;
+    z-index: 1;
+    @include marginTopAndLeft(-16%, 16%);
+}
+
+.train_icon_background {
+    position: absolute;
+    z-index: 0;
+    @include marginTopAndLeft(-17%, 15%);
+}
+
+
+//loading icon and view all button styles
+
+.loading, .view_all {
+
+    padding: 1%;
+    margin: 0.5%;
+    @include flexCenterAndColumn();
+}
+
+.view_all > button {
+    font-size: large;
+}
+
+
+//other card option styles
+
+.other_card_options {
+    padding: 5%;
+    background-color: aliceblue;
+    @include justifyContent(space-evenly);
+}
+
+.option_1, 
+.option_2, 
+.option_3, 
+.option_4, 
+.option_5 {
+    width: 200px;
+    padding: 1%;
+    background-color: $whiteColor;
+    
+    @include borderRadius(5%);
+
+    &:hover {
+        box-shadow: 5px 10px 8px #888888;
+        transition: $transition;
+    }
+}
+
+//navigate button styles
+
+.navigate_image {
+    position: absolute;
+    width: 80px;
+    @include marginTopAndLeft(2%, -5%);
+}
+ 
+.tick_icon, 
+.train_icon, 
+.join_people_icon, 
+.chat_icon,
+.customer_icon {
+    position: absolute;
+    @include marginTopAndLeft(7px, -32px);
+}
+
+//view all button styles
+
+.view_all_btn {
+    width: 10%;
+    height: 40%;
+    background-color: $blueButton;
+    color: $whiteColor;
+    height: 40px;
+    @include borderRadius(20px);
+
+    &:hover {
+        background-color: $whiteColor;
+        color: $blueButton;
+        border: 1px solid $blueButton;
+        transition: $transition;
+    }
+}

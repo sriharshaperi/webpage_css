@@ -1,0 +1,252 @@
+@import './variables';
+@import './mixins';
+
+.banner {
+    margin-bottom: 5%;
+    @include flexCenterAndColumn();
+}
+
+.blue_banner_img {
+    z-index: 0;
+    margin-top: 15%;
+}
+
+.green_banner_img {
+    z-index: 1;
+    position: absolute;
+    @include marginTopAndLeft(14.84%, 0.7%);
+}
+
+.faq_banner_headline {
+    z-index: 1;
+    font-size: x-large;
+    position: absolute;
+    @include marginTopAndLeft(17%, -20%);
+}
+
+.faq_headline_top {
+    color: $whiteColor;
+}
+
+.faq_headline_bottom {
+    margin-top: -5%;
+    color: $whiteColor;
+}
+
+.faq_banner_caption {
+    position: absolute;
+    z-index: 1;
+    color: $whiteColor;
+    @include marginTopAndLeft(27%, -22%);
+}
+
+.get_more_details {
+    position: absolute;
+    z-index: 1;
+    font-size: large;
+    font-weight: 700;
+    height: 50px;
+    width: 250px;
+    color: darkgreen;
+    background-color: $whiteColor;
+    border: none;
+
+    @include borderRadius(30px);
+    @include marginTopAndLeft(31%, -30%);
+}
+
+.get_more_details:hover {
+    background-color: darkgreen;
+    color: $whiteColor;
+    transition: $transition;
+}
+
+.banner_dots, 
+.solid_white_ellipse, 
+.blurred_green_ellipse, 
+.green_banner_train, 
+.green_banner_traveller {
+
+    position: absolute;
+}
+
+.green_banner_traveller {
+    z-index: 2;
+    transform: rotate(2deg);
+    @include marginTopAndLeft(18%, 18%);
+}
+
+.green_banner_train {
+    z-index: 1;
+    transform: rotate(-1deg);
+    @include marginTopAndLeft(28.5%, 9.5%);
+}
+
+.solid_white_ellipse {
+    z-index: 1;
+    margin-top: 19%;
+    margin-left: 21%;
+    @include marginTopAndLeft(19%, 21%);
+}
+
+.blurred_green_ellipse {
+    z-index: 1;
+    @include marginTopAndLeft(27%, 23%);
+}
+
+.banner_dots {
+    z-index: 1;
+    @include marginTopAndLeft(17.5%, 13%);
+}
+
+.faq_and_help {
+    margin: auto;
+    width: 70%;
+    @include justifyContent(space-evenly);
+}
+
+.help, .faq {
+    flex: 50%;
+}
+
+.faq {
+    padding: 2%;
+    @include flexDirection(column);
+}
+
+.faq_1, .faq_2, .faq_3, .faq_4 {
+    display: flex;
+    padding: 2%;
+    margin: 1%;
+    @include borderRadius(10px);
+}
+
+.faq_1 {
+    border: 2px solid darkblue;
+}
+
+.faq_2, .faq_3, .faq_4  {
+    @include flexAlignCenter();
+    @include justifyContent(space-between);
+    border: 1px solid black;
+}
+
+.accordion_close {
+    margin-top: 21px
+}
+
+.help {
+    @include flexDirection(column);
+    padding: 2%;
+}
+
+.help_title {
+    font-size: 3rem;
+    margin-bottom: -1%;
+}
+
+.help_logo {
+    align-self: center;
+}
+
+.cta_button {
+    margin-top: 10%;
+    font-size: x-large;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 50px;
+    background-color: $blueButton;
+    color: $whiteColor;
+    @include borderRadius(30px);
+}
+
+.cta_button:hover {
+    background-color: white;
+    color: $blueButton;
+    transition: $transition;
+}
+
+.downloads_section {
+
+    @include justifyContent(space-evenly);
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.downloads_heading_part1, 
+.downloads_heading_part2 {
+    font-size: 3rem;
+}
+.downloads_heading_part2 {
+    margin-top: -5%;
+}
+
+.downloads_caption1, 
+.downloads_caption2 {
+    font-size: large;
+}
+
+.downloads_caption2 {
+    margin-top: -2%;
+}
+
+.download_options {
+    margin-top: 20%;
+    @include justifyContent(space-evenly);
+}
+
+.download_btn {
+    height: 80px;
+    width: 200px;
+    background-color: $whiteColor;
+    border: 1px solid #888888;
+    @include borderRadius(10px);
+    &:hover {
+        border: none;
+        box-shadow: 5px 10px 8px #888888;
+        transition: $transition;
+    }
+}
+
+.download_btn {
+    div {
+    
+        @include flexAlignCenter();
+        @include justifyContent(space-evenly);
+    }
+}
+
+.btn_content {
+   
+    @include flexDirection(column);
+}
+
+.btn_lower_text {
+    font-size: large;
+    margin-top: 10%;
+}
+
+.btn_upper_text {
+    text-align: left;
+}
+
+.btn_nav {
+    height: 50px;
+    background-color: $blueButton;
+    color: $whiteColor;
+    border: none;
+    @include borderRadius(10px);
+    &:hover {
+        border: 1px solid $blueButton;
+        background-color: $whiteColor;
+        transition: $transition;
+    }
+}
+
+.next_previous_nav {
+    display: block;
+    margin-right: 0%;
+    margin-left: auto;
+    width: 25%;
+}

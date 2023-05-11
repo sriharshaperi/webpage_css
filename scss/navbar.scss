@@ -1,0 +1,91 @@
+@import './mixins';
+@import './variables';
+
+.nav_bar_section {
+    position: fixed;
+    z-index: 3;
+    background-color: rgba($color: $whiteColor, $alpha: 0.95);
+    width: 100%;
+    top: 0;
+}
+
+.nav_bar {
+
+    @include flexAlignCenter();
+    @include justifyContent(space-evenly);
+}
+
+.nav_list {
+    
+    @include flexDirection(column);
+}
+
+.nav_list_top {
+
+    ul {
+    
+        @include justifyContent(space-evenly);
+    }    
+} 
+
+
+.nav_list_top {
+     
+    ul {
+        .nav_list_top_item1 {
+            
+            margin-left: -6.5%;
+        }
+     }
+}
+
+.nav_list_bottom {
+
+    ul {
+
+        .nav_list_bottom_item1 {
+
+            margin-left: -3%;
+        }
+    } 
+} 
+
+.loc_group {
+    
+    @include flexAlignCenter();
+    @include justifyContent(space-between);
+}
+
+.nav_list_top, .nav_list_bottom {
+    
+    @include listItems();
+}
+
+.nav_list_top_item1, 
+.nav_list_top_item2, 
+.nav_list_top_item3, 
+.nav_list_top_item4 {
+    margin-top: 3px;
+}
+
+.nav_list_bottom {
+    margin-top: -2%;
+    margin-left: -4%;
+}
+
+.sign_in {
+    border-radius: 15px;
+    width: 80px;
+    height: 25px;
+    background-color: $blueButton;
+    color: $whiteColor;
+
+    &:hover {
+        background-color: $whiteColor;
+        color: $blueButton;
+        font-weight: 600;
+        border: 1px solid $blueButton;
+        transition: $transition;
+    }
+}
+    

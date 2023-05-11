@@ -1,0 +1,37 @@
+@import './mixins';
+@import './variables';
+
+@import './navbar';
+@import './content_body';
+@import './cards_section';
+@import './faq_banner_section';
+@import './footer';
+
+//main.scss file styling and all other files also included
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+
+    //mixin to make border and outline none
+    @include borderOutlineNone(); 
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: $redColor;
+    }
+}
+
+
+//for inputs type number and text
+[type="text"], [type="number"] {
+    @include borderOutlineNone(); 
+    height: 30px;
+    background-color: lightgray;
+}
